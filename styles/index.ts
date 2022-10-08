@@ -1,0 +1,1 @@
+import './nt.css'
