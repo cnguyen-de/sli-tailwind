@@ -1,6 +1,7 @@
 ---
 # try also 'default' to start simple
 theme: ./theme
+title: 'Functional CSS with Tailwind CSS'
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://source.unsplash.com/collection/94734566/1920x1080
@@ -8,14 +9,18 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
 class: 'text-center'
 # show line numbers in code blocks
 lineNumbers: false
+highlighter: shiki
+selectable: false
+exportFilename: 'tailwindcss-cnguyen.de-novasummit22'
 # some information about the slides, markdown enabled
 info: |
   ## Functional CSS with Tailwindcss
 # persist drawings in exports and build
 drawings:
-  persist: true
+  persist: false
 fonts:
   sans: 'Helvetica Neue,Robot'
+  mono: 'Fira Code'
   local: 'Helvetica Neue'
   weights: '200,400,600,700'
   provider: 'none'
@@ -79,6 +84,31 @@ preload: true
 </div>
 
 ---
+---
+# What is a Functional CSS Framework
+
+* Pre-defined CSS classes
+* Each class has **only one** definition
+* Class names are self-explaining
+* Example:
+
+<div class="w-[50%]">
+```html
+<div class="absolute top-10">
+  <span class="font-700">
+    Chi Nguyen @ NovaSummit 2022
+  </span>
+</div>
+<div class="absolute bottom-30 text-left">
+  <h1>Functional CSS with Tailwindcss</h1>
+  <div class="italic font-light text-3xl text-gray-300">
+    Start doing rapid web development today!
+  </div>
+</div>
+```
+</div>
+
+---
 layout: statement
 ---
 # But why?
@@ -96,62 +126,101 @@ layout: statement
 </div>
 
 ---
----
-# What is a Functional CSS Framework
-
-* Pre-defined CSS classes
-* Each class has **only one** definition
-* Class names are self-explaining
-* Example: _flex_, _p-8_, _text-center_
-
----
-layout: image-left
-image: /semantic.svg
-animation: false
+layout: code-preview
 ---
 
-<div class="place-self-start justify-self-start">
+```html
+<div class="card">
+  <img class="card__image" src="..." alt="...">
+  <div class="card__body">
+    <h5 class="card__title">
+      The Coldest Sunset
+    </h5>
+    <p class="card__text card__text--highlight">
+      Lorem ipsum dolor sit amet, consectetur 
+      adipisicing elit. Voluptatibus quia, nulla! 
+      Maiores et perferendis eaque, exercitationem 
+      praesentium nihil.
+    </p>
+  </div>
+</div>
+```
+
+<div class="justify-self-start">
   <h2 class="text-4xl">BEM Methodology</h2>
   <p class="my-4 text-2xl">Semantic CSS classes</p>
   <p class="text-2xl">Block__Element--Modifier</p>
 </div>
 
-
-
 ---
-layout: image-left
-image: /semantic.svg
-animation: true
+layout: code-preview
 ---
 
-<div>
-  <div class="max-w-sm rounded overflow-hidden shadow-lg">
-    <img class="w-full" src="https://v1.tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
-    <div class="px-6 py-4 bg-white">
-      <div class="font-bold text-xl mb-2 text-black">The Coldest Sunset</div>
-      <p class="text-gray-700 text-base">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-      </p>
-    </div>
+```html
+<div class="card">
+  <img class="card__image" src="..." alt="...">
+  <div class="card__body">
+    <h5 class="card__title">
+      The Coldest Sunset
+    </h5>
+    <p class="card__text card__text--highlight">
+      Lorem ipsum dolor sit amet, consectetur 
+      adipisicing elit. Voluptatibus quia, nulla! 
+      Maiores et perferendis eaque, exercitationem 
+      praesentium nihil.
+    </p>
   </div>
 </div>
+```
+
+<ExampleCard></ExampleCard>
 
 ---
-layout: image-left
-image: /tailwind.svg
-animation: false
+layout: code-preview
 ---
-<div>
-  <div class="max-w-sm rounded overflow-hidden shadow-lg">
-    <img class="w-full" src="https://v1.tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
-    <div class="px-6 py-4 bg-white">
-      <div class="font-bold text-xl mb-2 text-black">The Coldest Sunset</div>
-      <p class="text-gray-700 text-base">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-      </p>
-    </div>
+
+```html
+<div class="max-w-sm rounded overflow-hidden shadow-lg">
+  <img class="w-full" src="..." alt="...">
+  <div class="px-6 py-4 bg-white">
+    <h5 class="font-bold text-xl mb-2 text-black">
+      The Coldest Sunset
+    </h5>
+    <p class="text-gray-700 text-base">
+      Lorem ipsum dolor sit amet, consectetur 
+      adipisicing elit. Voluptatibus quia, nulla! 
+      Maiores et perferendis eaque, exercitationem 
+      praesentium nihil.
+    </p>
   </div>
 </div>
+```
+
+<ExampleCard></ExampleCard>
+
+
+---
+layout: code-preview
+---
+
+```html {1|3|4,7}
+<div class="max-w-sm rounded overflow-hidden shadow-lg">
+  <img class="w-full" src="..." alt="...">
+  <div class="px-6 py-4 bg-white">
+    <h5 class="font-bold text-xl mb-2 text-black">
+      The Coldest Sunset
+    </h5>
+    <p class="text-gray-700 text-base">
+      Lorem ipsum dolor sit amet, consectetur 
+      adipisicing elit. Voluptatibus quia, nulla! 
+      Maiores et perferendis eaque, exercitationem 
+      praesentium nihil.
+    </p>
+  </div>
+</div>
+```
+
+<ExampleCard></ExampleCard>
 
 ---
 

@@ -59,6 +59,10 @@ pre[class*='language-'] {
   @apply p-2;
 }
 
+code {
+  font-size: 1em;
+  line-height: 20px;
+}
 :not(pre) > code {
   font-size: 1em;
   background: var(--prism-background);
