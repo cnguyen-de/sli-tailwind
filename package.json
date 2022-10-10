@@ -2,7 +2,7 @@
   "name": "sli-tailwind",
   "private": true,
   "scripts": {
-    "build": "slidev build",
+    "build": "slidev build tailwindcss.md",
     "dev": "slidev tailwindcss.md --open",
     "export": "slidev export"
   },
