@@ -14,10 +14,15 @@ info: |
 # persist drawings in exports and build
 drawings:
   persist: true
+fonts:
+  sans: 'Helvetica Neue,Robot'
+  local: 'Helvetica Neue'
+  weights: '200,400,600,700'
+  provider: 'none'
 # use UnoCSS
 css: unocss
 layout: intro-image
-image: /assets/bg.jpeg
+image: /public/bg.jpeg
 ---
 
 <div class="absolute top-10">
@@ -86,7 +91,7 @@ layout: statement
 
 <div class="absolute w-64">
   <video class="w-full h-full" muted autoplay loop>
-    <source src="/assets/bwhy.mp4" type="video/mp4" />
+    <source src="/public/bwhy.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -101,7 +106,7 @@ layout: statement
 
 ---
 layout: image-left
-image: /assets/semantic.svg
+image: /public/semantic.svg
 animation: false
 ---
 
@@ -115,7 +120,7 @@ animation: false
 
 ---
 layout: image-left
-image: /assets/semantic.svg
+image: /public/semantic.svg
 animation: true
 ---
 
@@ -133,7 +138,7 @@ animation: true
 
 ---
 layout: image-left
-image: /assets/tailwind.svg
+image: /public/tailwind.svg
 animation: false
 ---
 <div>
@@ -149,7 +154,6 @@ animation: false
 </div>
 
 ---
----
 
 # Semantic vs utility classes
 * Markup doesn't concern styling but CSS is concerned with markup structure
@@ -157,10 +161,13 @@ animation: false
 * Responsive design
 * More details at:
 <div class="pl-8 pt-2">
-  <a>https://nicolasgallagher.com/about-html-semantics-front-end-architecture/</a>
 
-  <a>https://adamwathan.me/css-utility-classes-and-separation-of-concerns/</a>
+  https://nicolasgallagher.com/about-html-semantics-front-end-architecture/
+
+  https://adamwathan.me/css-utility-classes-and-separation-of-concerns/
 </div>
+
+
 ---
 layout: image-right
 image: https://stateofx-images.netlify.app/captures/css2021/en-US/css_frameworks_experience_ranking.png
@@ -176,7 +183,7 @@ imageSrc: https://2021.stateofcss.com/en-US/technologies/css-frameworks/#css_fra
 
 ---
 layout: 3-images
-imageLeft: /assets/lbbw.png
-imageTopRight: /assets/mbio.svg
-imageBottomRight: /assets/sokabau.webp
+imageLeft: /public/lbbw.png
+imageTopRight: /public/mbio.svg
+imageBottomRight: /public/sokabau.webp
 ---
