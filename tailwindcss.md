@@ -22,7 +22,7 @@ fonts:
 # use UnoCSS
 css: unocss
 layout: intro-image
-image: /public/bg.jpeg
+image: /bg.jpeg
 ---
 
 <div class="absolute top-10">
@@ -91,7 +91,7 @@ layout: statement
 
 <div class="absolute w-64">
   <video class="w-full h-full" muted autoplay loop>
-    <source src="/public/bwhy.mp4" type="video/mp4" />
+    <source src="/bwhy.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -106,7 +106,7 @@ layout: statement
 
 ---
 layout: image-left
-image: /public/semantic.svg
+image: /semantic.svg
 animation: false
 ---
 
@@ -120,7 +120,7 @@ animation: false
 
 ---
 layout: image-left
-image: /public/semantic.svg
+image: /semantic.svg
 animation: true
 ---
 
@@ -138,7 +138,7 @@ animation: true
 
 ---
 layout: image-left
-image: /public/tailwind.svg
+image: /tailwind.svg
 animation: false
 ---
 <div>
@@ -183,7 +183,7 @@ imageSrc: https://2021.stateofcss.com/en-US/technologies/css-frameworks/#css_fra
 
 ---
 layout: 3-images
-imageLeft: /public/lbbw.png
-imageTopRight: /public/mbio.svg
-imageBottomRight: /public/sokabau.webp
+imageLeft: /lbbw.png
+imageTopRight: /mbio.svg
+imageBottomRight: /sokabau.webp
 ---
