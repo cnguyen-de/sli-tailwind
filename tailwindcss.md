@@ -19,11 +19,8 @@ info: |
 drawings:
   persist: false
 fonts:
-  sans: 'Helvetica Neue,Robot'
+  sans: 'Inter'
   mono: 'Fira Code'
-  local: 'Helvetica Neue'
-  weights: '200,400,600,700'
-  provider: 'none'
 # use UnoCSS
 css: unocss
 layout: intro-image
@@ -41,6 +38,12 @@ image: /bg.jpeg
   <div class="italic font-light text-3xl text-gray-300">Start doing rapid web development today!
   </div>
 </div>
+
+---
+layout: statement
+---
+
+<Profile />
 
 ---
 layout: statement
@@ -147,9 +150,9 @@ layout: code-preview
 ```
 
 <div class="justify-self-start">
-  <h2 class="text-4xl">BEM Methodology</h2>
-  <p class="my-4 text-2xl">Semantic CSS classes</p>
-  <p class="text-2xl">Block__Element--Modifier</p>
+  <h1 class="text-4xl font-bold">BEM Methodology</h1>
+  <p class="my-4 text-2xl">- Semantic CSS classes</p>
+  <p class="text-2xl">- Block__Element--Modifier</p>
 </div>
 
 ---
@@ -246,9 +249,11 @@ imageSrc: https://2021.stateofcss.com/en-US/technologies/css-frameworks/#css_fra
 # Introducing Tailwindcss
 ## https://tailwindcss.com
 
-* Configurable theme
-* Optimized CSS bundle with Purge CSS
-* Works with any web app (vanilla or frameworks)
+* Utility-first CSS Framework
+* Set of classes
+* Arbitrary values
+* Built-in dark mode
+* Responsiveness in HTML
 
 ---
 layout: image-right
@@ -259,23 +264,9 @@ imageSrc: https://2021.stateofcss.com/en-US/technologies/css-frameworks/#css_fra
 # Introducing Tailwindcss
 ## https://tailwindcss.com
 
-* Configurable theme
+* Configurable theme 
 * Optimized CSS bundle with Purge CSS
 * Works with any web app (vanilla or frameworks)
-
----
-layout: code-preview
----
-<div>
-# Introducing Tailwindcss
-## https://tailwindcss.com
-
-* Configurable theme
-* Optimized CSS bundle with Purge CSS
-* Works with any web app (vanilla or frameworks)
-</div>
-
-<iframe class="w-64 h-64" source="https://2021.stateofcss.com/en-US/technologies/css-frameworks/#css_frameworks_experience_ranking"></iframe>
 
 ---
 layout: 3-images

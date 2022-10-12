@@ -21,7 +21,7 @@ const style = computed(() => handleBackground(props.image))
     <div class="slidev-layout default image-right" :class="props.class">
       <slot />
     </div>
-    <div class="my-16 mr-4 rounded-lg" :style="style">
+    <div class="my-16 mr-4 rounded-lg" v-motion v-motion-slide-visible-right :style="style">
       <a class="absolute py-2 z-10 bottom-0 text-xs text-gray-500 dark:text-gray-400 ">{{ source }}</a>
     </div>
   </div>
