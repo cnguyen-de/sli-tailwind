@@ -19,6 +19,7 @@ info: |
 drawings:
   persist: false
 fonts:
+  # sans: 'Helvetica Neue'
   sans: 'Inter'
   mono: 'Fira Code'
 # use UnoCSS
@@ -29,7 +30,7 @@ image: /bg.jpeg
 
 <div class="absolute top-10">
   <span class="font-700">
-    Chi Nguyen @ NovaSummit 2022
+    Chi Nguyen @ Novatec Summit 2022
   </span>
 </div>
 
@@ -99,7 +100,7 @@ preload: true
 ```html
 <div class="absolute top-10">
   <span class="font-700">
-    Chi Nguyen @ NovaSummit 2022
+    Chi Nguyen @ Novatec Summit 2022
   </span>
 </div>
 <div class="absolute bottom-30 text-left">
@@ -269,8 +270,20 @@ imageSrc: https://2021.stateofcss.com/en-US/technologies/css-frameworks/#css_fra
 * Works with any web app (vanilla or frameworks)
 
 ---
+layout: statement
+---
+
+# Live Coding
+---
 layout: 3-images
 imageLeft: /lbbw.png
 imageTopRight: /mbio.svg
 imageBottomRight: /sokabau.webp
 ---
+
+#---
+#layout: live-coding
+#---
+#<div class="h-full w-full">
+#<iframe class="w-full h-full" style="zoom: 0.4;" src="https://play.tailwindcss.com/"></iframe>
+#</div>
