@@ -239,7 +239,7 @@ layout: code-preview
 
 ---
 layout: image-right
-image: https://stateofx-images.netlify.app/captures/css2021/en-US/css_frameworks_experience_ranking.png
+image: /stateofcss.png
 imageSrc: https://2021.stateofcss.com/en-US/technologies/css-frameworks/#css_frameworks_experience_ranking
 ---
 
@@ -249,6 +249,33 @@ imageSrc: https://2021.stateofcss.com/en-US/technologies/css-frameworks/#css_fra
 * Configurable theme
 * Optimized CSS bundle with Purge CSS
 * Works with any web app (vanilla or frameworks)
+
+---
+layout: image-right
+image: /stateofcss-usage.png
+imageSrc: https://2021.stateofcss.com/en-US/technologies/css-frameworks/#css_frameworks_experience_ranking
+---
+
+# Introducing Tailwindcss
+## https://tailwindcss.com
+
+* Configurable theme
+* Optimized CSS bundle with Purge CSS
+* Works with any web app (vanilla or frameworks)
+
+---
+layout: code-preview
+---
+<div>
+# Introducing Tailwindcss
+## https://tailwindcss.com
+
+* Configurable theme
+* Optimized CSS bundle with Purge CSS
+* Works with any web app (vanilla or frameworks)
+</div>
+
+<iframe class="w-64 h-64" source="https://2021.stateofcss.com/en-US/technologies/css-frameworks/#css_frameworks_experience_ranking"></iframe>
 
 ---
 layout: 3-images
