@@ -11,7 +11,7 @@ class: 'text-center'
 lineNumbers: false
 highlighter: shiki
 selectable: false
-exportFilename: 'tailwindcss-cnguyen.de-novasummit22'
+exportFilename: 'tailwindcss-novasummit22'
 # some information about the slides, markdown enabled
 info: |
   ## Functional CSS with Tailwindcss
@@ -21,6 +21,7 @@ drawings:
 fonts:
   # sans: 'Helvetica Neue'
   sans: 'Inter'
+  weights: '200,300,400,500,600'
   mono: 'Fira Code'
 # use UnoCSS
 css: unocss
@@ -89,20 +90,52 @@ preload: true
 
 ---
 ---
-# What is a Functional CSS Framework
+# HTML & CSS
+## A basic introduction
+
+<div class="grid grid-cols-2 gap-8 pt-8">
+  <div class="flex flex-col gap-8">
+  
+  ```html 
+  HTML
+  <div class="card">Novatec Summit 2022</div>
+  ```
+
+  ```css  
+  CSS
+  .card { 
+    height: 300px;
+    width: 450px;
+    background:
+     linear-gradient(to bottom right, #E9454E #5B4897);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+  }
+  ```
+  </div>
+
+  <div v-click class="flex justify-center items-center w-[450px] h-[300px] bg-gradient-to-br from-[#E9454E] to-[#5B4897] rounded-lg">
+  Novatec Summit 2022
+  </div>
+</div>
+---
+---
+# What is a functional CSS framework
 
 * Pre-defined CSS classes
-* Each class has **only one** definition
+* Each rule has **only one** property
 * Class names are self-explaining
 
 <ul class="!mt-0" v-click="1">
   <li class="relative">Example</li>
 </ul>
 
-<div v-click="1" class="w-[50%]">
+<div v-click="1" class="grid grid-cols-2 gap-8">
 ```html
 <div class="absolute top-10">
-  <span class="font-700">
+  <span class="font-bold">
     Chi Nguyen @ Novatec Summit 2022
   </span>
 </div>
@@ -112,6 +145,19 @@ preload: true
     Start doing rapid web development today!
   </div>
 </div>
+```
+
+```css
+.absolute {
+  position: absolute;
+}
+.font-light {
+  font-weight: 300;
+}
+.italic {
+  font-style: italic;
+}
+...
 ```
 </div>
 
@@ -277,6 +323,22 @@ layout: statement
 ---
 
 # Live Coding
+
+---
+layout: fact
+---
+<h1 v-motion-slide-visible-bottom>It's <h1>fast</h1></h1>
+
+---
+layout: fact
+---
+<h1>It's <h1 v-motion v-motion-slide-visible-bottom>rapid</h1></h1>
+
+---
+layout: fact
+---
+<h1>DX <h1 v-motion v-motion-slide-visible-bottom>🚀</h1></h1>
+
 ---
 layout: 3-images
 imageLeft: /lbbw.png
@@ -284,9 +346,10 @@ imageTopRight: /mbio.svg
 imageBottomRight: /sokabau.webp
 ---
 
-#---
-#layout: live-coding
-#---
-#<div class="h-full w-full">
-#<iframe class="w-full h-full" style="zoom: 0.4;" src="https://play.tailwindcss.com/"></iframe>
-#</div>
+
+---
+layout: fact
+---
+# Thank you
+
+<p class="pt-8 text-gray-700 dark:text-gray-400">Slides available @ <a href="https://slides.cnguyen.de">slides.cnguyen.de</a></p>
