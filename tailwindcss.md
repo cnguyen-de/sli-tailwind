@@ -94,9 +94,12 @@ preload: true
 * Pre-defined CSS classes
 * Each class has **only one** definition
 * Class names are self-explaining
-* Example:
 
-<div class="w-[50%]">
+<ul class="!mt-0" v-click="1">
+  <li class="relative">Example</li>
+</ul>
+
+<div v-click="1" class="w-[50%]">
 ```html
 <div class="absolute top-10">
   <span class="font-700">
@@ -150,7 +153,7 @@ layout: code-preview
 </div>
 ```
 
-<div class="justify-self-start">
+<div class="justify-self-start" v-click>
   <h1 class="text-4xl font-bold">BEM Methodology</h1>
   <p class="my-4 text-2xl">- Semantic CSS classes</p>
   <p class="text-2xl">- Block__Element--Modifier</p>
