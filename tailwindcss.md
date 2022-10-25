@@ -1,29 +1,20 @@
 ---
-# try also 'default' to start simple
 theme: ./theme
-title: 'Functional CSS with Tailwind CSS'
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
+title: Functional CSS with Tailwind CSS
 background: https://source.unsplash.com/collection/94734566/1920x1080
-# apply any windi css classes to the current slide
-class: 'text-center'
-# show line numbers in code blocks
+class: text-center
 lineNumbers: false
 highlighter: shiki
 selectable: false
-exportFilename: 'tailwindcss-novasummit22'
-# some information about the slides, markdown enabled
+exportFilename: tailwindcss-novasummit22
 info: |
   ## Functional CSS with Tailwindcss
-# persist drawings in exports and build
 drawings:
   persist: false
 fonts:
-  # sans: 'Helvetica Neue'
-  sans: 'Inter'
-  weights: '200,300,400,500,600'
-  mono: 'Fira Code'
-# use UnoCSS
+  sans: Inter
+  weights: 200,300,400,500,600
+  mono: Fira Code
 css: unocss
 layout: intro-image
 image: /bg.jpeg
@@ -41,6 +32,10 @@ image: /bg.jpeg
   </div>
 </div>
 
+<!--
+Dark mode!
+-->
+
 ---
 layout: statement
 ---
@@ -55,6 +50,10 @@ layout: statement
  <div class="flex flex-col items-end"><h1>Functional</h1></div>
  <h1 class="justify-self-start">CSS</h1>
 </div>
+
+<!--
+Functional CSS may also be known as
+-->
 
 ---
 layout: statement
@@ -88,8 +87,12 @@ preload: true
  <h1 class="justify-self-start">CSS</h1>
 </div>
 
+<!--
+... So what exactly is functional css? Before we get to the definition, let's start with something fundamental, the terminology of CSS.
+-->
+
 ---
----
+
 # HTML & CSS
 ## A basic introduction
 
@@ -101,7 +104,7 @@ preload: true
   <div class="card">Novatec Summit 2022</div>
   ```
 
-  ```css  
+  ```css {1|all}
   CSS
   .card { 
     height: 300px;
@@ -120,12 +123,21 @@ preload: true
   Novatec Summit 2022
   </div>
 </div>
+
+<!--
+The HTML contains a div, which has a class name of "card".
+
+In the CSS section, it contains CSS rules. In this example, you can see only one rule which targets the "card" class by using dot selector.
+
+Each line inside the rule is called declaration
+-->
+
 ---
----
+
 # What is a functional CSS framework
 
 * Pre-defined CSS classes
-* Each rule has **only one** property
+* Each CSS rule contains **only one** declaration
 * Class names are self-explaining
 
 <ul class="!mt-0" v-click="1">
@@ -164,11 +176,6 @@ preload: true
 ---
 layout: statement
 ---
-# But why?
-
----
-layout: statement
----
 
 # But why?
 
@@ -199,11 +206,20 @@ layout: code-preview
 </div>
 ```
 
-<div class="justify-self-start" v-click>
+<div class="justify-self-start space-y-4" v-click>
   <h1 class="text-4xl font-bold">BEM Methodology</h1>
-  <p class="my-4 text-2xl">- Semantic CSS classes</p>
+  <p class="text-2xl">- Semantic CSS classes</p>
   <p class="text-2xl">- Block__Element--Modifier</p>
+  <p class="text-2xl">- Project specific naming convention</p>
 </div>
+
+<!--
+In a real world project
+
+
+
+-> sometimes it's hard to imagine the UI just from the code
+-->
 
 ---
 layout: code-preview
