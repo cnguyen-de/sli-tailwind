@@ -18,7 +18,7 @@ const style = computed(() => handleBackground(props.image))
 
 <template>
   <div class="grid grid-cols-2 w-full h-full">
-    <div class="slidev-layout default image-right" :class="props.class">
+    <div class="slidev-layout default image-right pr-4" :class="props.class">
       <slot />
     </div>
     <div class="my-16 mr-4 rounded-lg" :style="style">

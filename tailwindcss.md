@@ -33,7 +33,7 @@ image: /bg.jpeg
 </div>
 
 <!--
-Dark mode!
+Reminder Dark mode, white NOVATEC
 -->
 
 ---
@@ -41,6 +41,16 @@ layout: statement
 ---
 
 <Profile />
+
+<!--
+A short introduction about myself.
+
+My name is Chi and I live in FFM 
+
+As a member of architecture and design gild, I like to dive into architectural topic within the frontend world and obviously HTML and CSS is something you can not simply ignore. It's what makes the UI, sometimes it's hard to find a balance in separation of concerns between business logics and UI logics.
+
+And the topic today is about functional CSS ->
+-->
 
 ---
 layout: statement
@@ -52,7 +62,9 @@ layout: statement
 </div>
 
 <!--
-Functional CSS may also be known as
+So, Functional CSS.
+
+You may also have heard about this term under other names, such as ->
 -->
 
 ---
@@ -70,6 +82,9 @@ preload: true
  <h1 class="justify-self-start">CSS</h1>
 </div>
 
+<!--
+Atomic CSS ->
+-->
 
 ---
 layout: statement
@@ -88,7 +103,9 @@ preload: true
 </div>
 
 <!--
-... So what exactly is functional css? Before we get to the definition, let's start with something fundamental, the terminology of CSS.
+or Utility CSS. In this talk, these terms may come up interchangably and will refer to the same meaning.
+
+... So what exactly is functional css? Before we get to the definition, let's start with something fundamental, the terminology of CSS. ->
 -->
 
 ---
@@ -129,7 +146,11 @@ The HTML contains a div, which has a class name of "card".
 
 In the CSS section, it contains CSS rules. In this example, you can see only one rule which targets the "card" class by using dot selector.
 
-Each line inside the rule is called declaration
+Each line inside the rule is called declaration 
+
+->
+
+And this code snippet will render this nice red violet card
 -->
 
 ---
@@ -140,38 +161,55 @@ Each line inside the rule is called declaration
 * Each CSS rule contains **only one** declaration
 * Class names are self-explaining
 
-<ul class="!mt-0" v-click="1">
-  <li class="relative">Example</li>
-</ul>
+<div v-click="1" class="mt-4">
+  
+  <div class="grid grid-cols-2 gap-8">
 
-<div v-click="1" class="grid grid-cols-2 gap-8">
-```html
-<div class="absolute top-10">
-  <span class="font-bold">
-    Chi Nguyen @ Novatec Summit 2022
-  </span>
-</div>
-<div class="absolute bottom-30 text-left">
-  <h1>Functional CSS with Tailwindcss</h1>
-  <div class="italic font-light text-3xl text-gray-300">
-    Start doing rapid web development today!
+  ```html
+  <div class="absolute top-10">
+    <span class="font-bold">
+      Chi Nguyen @ Novatec Summit 2022
+    </span>
+  </div>
+  <div class="absolute bottom-30 text-left">
+    <h1>Functional CSS with Tailwindcss</h1>
+    <div class="italic font-light text-3xl text-gray-300">
+      Start doing rapid web development today!
+    </div>
+  </div>
+  ```
+
+  ```css
+  .absolute {
+    position: absolute;
+  }
+  .font-light {
+    font-weight: 300;
+  }
+  .italic {
+    font-style: italic;
+  }
+  ...
+  ```
   </div>
 </div>
-```
 
-```css
-.absolute {
-  position: absolute;
-}
-.font-light {
-  font-weight: 300;
-}
-.italic {
-  font-style: italic;
-}
-...
-```
-</div>
+<!--
+A Function CSS Framework provides
+- Pre defined css classes
+- Each CSS rule contains **only one** declaration
+- Class names are self-explaining
+
+->
+
+Let's look at this code snippet, this is the actual source code of the page cover in this talk.
+
+We can use a set of pre-defined classes directly and the framework will automatically generate the CSS rules like on the right side.
+
+By writing also the styling via utility classes, you don't need to switch between templating and styling, especially helpful for technologies such as React.
+
+->
+-->
 
 ---
 layout: statement
@@ -184,6 +222,12 @@ layout: statement
     <source src="/bwhy.mp4" type="video/mp4" />
   </video>
 </div>
+
+<!--
+Now, you may ask why would we write a bunch of classes in our HTML, isn't that hard to read?
+
+->
+-->
 
 ---
 layout: code-preview
@@ -214,11 +258,17 @@ layout: code-preview
 </div>
 
 <!--
-In a real world project
+In a real world project, you'd have your code that looks something similar to this.
+
+-> 
+
+This is an example using BEM methodology which utilizes semantic css classes. Semantic classes describe the HTML elements via a set rule of B-E-M. And each project has its own naming convention like prefixes or suffixes.
 
 
 
--> sometimes it's hard to imagine the UI just from the code
+- It's hard for new comers to get use to the convention/code base
+
+->
 -->
 
 ---
@@ -243,6 +293,12 @@ layout: code-preview
 ```
 
 <ExampleCard></ExampleCard>
+
+<!--
+It's also impossible to imagine the UI just from the code
+
+->
+-->
 
 ---
 layout: code-preview
@@ -309,7 +365,8 @@ layout: code-preview
 ---
 layout: image-right
 image: /stateofcss.png
-imageSrc: https://2021.stateofcss.com/en-US/technologies/css-frameworks/#css_frameworks_experience_ranking
+imageSrc: >-
+  https://2021.stateofcss.com/en-US/technologies/css-frameworks/#css_frameworks_experience_ranking
 ---
 
 # Introducing Tailwindcss
@@ -320,6 +377,7 @@ imageSrc: https://2021.stateofcss.com/en-US/technologies/css-frameworks/#css_fra
 * Arbitrary values
 * Built-in dark mode
 * Responsiveness in HTML
+
 
 ---
 layout: image-right
