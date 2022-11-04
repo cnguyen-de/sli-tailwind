@@ -47,10 +47,29 @@ A short introduction about myself.
 
 My name is Chi and I live in FFM 
 
-As a member of architecture and design gild, I like to dive into architectural topic within the frontend world and obviously HTML and CSS is something you can not simply ignore. It's what makes the UI, sometimes it's hard to find a balance in separation of concerns between business logics and UI logics.
+As a member of architecture and design guild, I like to dive into architectural topic within the frontend world and obviously HTML and CSS is something you can not simply ignore. It's what makes the UI, sometimes it's hard to find a balance in separation of concerns between business logics and UI logics within the HTML
+templates. As a matter of fact, having a well structured HTML enables you to implement changes in the UI easier.
 
 And the topic today is about functional CSS ->
 -->
+
+---
+layout: statement
+---
+
+# Implementing an UI is 
+# <span class="bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent">not easy</span>
+
+<!--
+In a sense of writing code that works isn't hard, writing good code that is easily understandable, maintainable and efficient is hard. We need to have a guideline of rulesets within the design system, but also keeping it customizable. There are several aspects that we need to keep in mind of. 
+
+->
+-->
+
+---
+---
+
+<DesignTriangle></DesignTriangle>
 
 ---
 layout: statement
