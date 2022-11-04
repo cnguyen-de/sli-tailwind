@@ -61,15 +61,35 @@ layout: statement
 # <span class="bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent">not easy</span>
 
 <!--
-In a sense of writing code that works isn't hard, writing good code that is easily understandable, maintainable and efficient is hard. We need to have a guideline of rulesets within the design system, but also keeping it customizable. There are several aspects that we need to keep in mind of. 
+But implementing an UI is not easy, especially ones that are open for changes.
+In a sense that writing code that works isn't hard but writing good code that is easily understandable, maintainable and efficient is hard. We need to have a guideline of rulesets within the design system, but also keeping it customizable. There are several aspects that we need to keep in mind of. 
 
 ->
 -->
 
 ---
----
 
 <DesignTriangle></DesignTriangle>
+
+<!--
+User experience or accessibility is what makes a good application.
+It is how the components behave, it dictates the user flows.
+
+Unified components provided by a design system allows to display the identity of the application. Keeping it consistent helps the users in navigating the application.
+
+Sometimes you'd need a touch of fanciness in which you'd need to change the base design of some components, customizability is key to make an application fun.
+
+->
+
+So combining all these aspects, we'd like to be in middle.
+
+->
+
+Now we can not simply use all of these mentioned libraries, sometimes we are using some inhouse components that require styles overriding. And that makes the development not fun. It takes time to implement the design, but more so the next time you need to add some tweaks.
+
+How do we achieve this sweet point?
+->
+-->
 
 ---
 layout: statement
@@ -81,7 +101,7 @@ layout: statement
 </div>
 
 <!--
-So, Functional CSS.
+By using Functional CSS.
 
 You may also have heard about this term under other names, such as ->
 -->
@@ -122,7 +142,7 @@ preload: true
 </div>
 
 <!--
-or Utility CSS. In this talk, these terms may come up interchangably and will refer to the same meaning.
+or Utility-first CSS. In this talk, these terms may come up interchangably and will refer to the same meaning.
 
 ... So what exactly is functional css? Before we get to the definition, let's start with something fundamental, the terminology of CSS. ->
 -->
@@ -253,13 +273,14 @@ layout: code-preview
 ---
 
 ```html
-<div class="card">
-  <img class="card__image" src="..." alt="...">
-  <div class="card__body">
-    <h5 class="card__title">
+<div class="cmp-proj-card">
+  <img class="cmp-proj-card__image" src="..." alt="...">
+  <div class="cmp-proj-card__body">
+    <h5 class="cmp-proj-card__title">
       The Coldest Sunset
     </h5>
-    <p class="card__text card__text--highlight">
+    <p class="cmp-proj-card__text 
+    cmp-proj-card__text--highlight">
       Lorem ipsum dolor sit amet, consectetur 
       adipisicing elit. Voluptatibus quia, nulla! 
       Maiores et perferendis eaque, exercitationem 
