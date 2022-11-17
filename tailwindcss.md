@@ -86,43 +86,13 @@ So combining all these aspects, we'd like to be in middle.
 
 ->
 
-Now we can not simply use all of these mentioned libraries, sometimes we are using some inhouse components that require styles overriding. And that makes the development not fun. It takes time to implement the design, but more so the next time you need to add some tweaks.
-
-How do we achieve this sweet point?
-->
--->
-
----
-layout: statement
----
-
-# Implementing an UI is 
-# <span class="bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent">not easy</span>
-
-<!--
-But implementing an UI is not easy, especially ones that are open for changes.
-In a sense that writing code that works isn't hard but writing good code that is easily understandable, maintainable and efficient is hard. We need to have a guideline of rulesets within the design system, but also keeping it customizable. There are several aspects that we need to keep in mind of. 
-
-->
 -->
 
 ---
 
-<DesignTriangle></DesignTriangle>
+<DesignTriangle details="true"></DesignTriangle>
 
 <!--
-User experience or accessibility is what makes a good application.
-It is how the components behave, it dictates the user flows.
-
-Unified components provided by a design system allows to display the identity of the application. Keeping it consistent helps the users in navigating the application.
-
-Sometimes you'd need a touch of fanciness in which you'd need to change the base design of some components, customizability is key to make an application fun.
-
-->
-
-So combining all these aspects, we'd like to be in middle.
-
-->
 
 Now we can not simply use all of these mentioned libraries, sometimes we are using some inhouse components that require styles overriding. And that makes the development not fun. It takes time to implement the design, but more so the next time you need to add some tweaks.
 
@@ -297,7 +267,7 @@ layout: statement
 
 <div class="absolute w-64">
   <video class="w-full h-full" muted autoplay loop>
-    <source src="/bwhy.mp4" type="video/mp4" />
+    <source src="/butwhy.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -318,8 +288,7 @@ layout: code-preview
     <h5 class="cmp-proj-card__title">
       The Coldest Sunset
     </h5>
-    <p class="cmp-proj-card__text 
-    cmp-proj-card__text--highlight">
+    <p class="cmp-proj-card__text">
       Lorem ipsum dolor sit amet, consectetur 
       adipisicing elit. Voluptatibus quia, nulla! 
       Maiores et perferendis eaque, exercitationem 
@@ -347,6 +316,8 @@ This is an example using BEM methodology which utilizes semantic css classes. Se
 
 - It's hard for new comers to get use to the convention/code base
 
+- It's hard for refactoring
+
 ->
 -->
 
@@ -355,13 +326,13 @@ layout: code-preview
 ---
 
 ```html
-<div class="card">
-  <img class="card__image" src="..." alt="...">
-  <div class="card__body">
-    <h5 class="card__title">
+<div class="cmp-proj-card">
+  <img class="cmp-proj-card__image" src="..." alt="...">
+  <div class="cmp-proj-card__body">
+    <h5 class="cmp-proj-card__title">
       The Coldest Sunset
     </h5>
-    <p class="card__text card__text--highlight">
+    <p class="cmp-proj-card__text">
       Lorem ipsum dolor sit amet, consectetur 
       adipisicing elit. Voluptatibus quia, nulla! 
       Maiores et perferendis eaque, exercitationem 
@@ -521,13 +492,18 @@ layout: fact
 ---
 <h1>DX <h1 v-motion v-motion-slide-visible-bottom>🚀</h1></h1>
 
+
 ---
+layout: live-coding
 ---
-random sites
+<Showcase></Showcase>
 
 ---
 layout: fact
 ---
 # Thank you
 
-<p class="pt-8 text-gray-700 dark:text-gray-400">Slides available @ <a href="https://slides.cnguyen.de">slides.cnguyen.de</a></p>
+<p class="absolute pt-4 text-gray-700 dark:text-gray-400" v-click>
+  Slides available @ <a href="https://slides.cnguyen.de">slides.cnguyen.de </a>
+  <img class="inset-0 mt-4 top-95 mx-auto h-32" src="/qrcode.png">
+</p>
