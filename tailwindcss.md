@@ -28,7 +28,7 @@ image: /bg.jpeg
 
 <div class="absolute bottom-30 text-left">
   <h1>Functional CSS with Tailwindcss</h1>
-  <div class="italic font-light text-3xl text-gray-300">Start doing rapid web development today!
+  <div class="italic font-light text-3xl text-gray-300">How functional CSS enables rapid prototyping!
   </div>
 </div>
 
@@ -51,6 +51,45 @@ As a member of architecture and design guild, I like to dive into architectural 
 templates. As a matter of fact, having a well structured HTML enables you to implement changes in the UI easier.
 
 And the topic today is about functional CSS ->
+-->
+
+
+---
+layout: statement
+---
+
+# Implementing an UI is 
+# <span class="bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent">not easy</span>
+
+<!--
+But implementing an UI is not easy, especially ones that are open for changes.
+In a sense that writing code that works isn't hard but writing good code that is easily understandable, maintainable and efficient is hard. We need to have a guideline of rulesets within the design system, but also keeping it customizable. There are several aspects that we need to keep in mind of. 
+
+->
+-->
+
+---
+
+<DesignTriangle></DesignTriangle>
+
+<!--
+User experience or accessibility is what makes a good application.
+It is how the components behave, it dictates the user flows.
+
+Unified components provided by a design system allows to display the identity of the application. Keeping it consistent helps the users in navigating the application.
+
+Sometimes you'd need a touch of fanciness in which you'd need to change the base design of some components, customizability is key to make an application fun.
+
+->
+
+So combining all these aspects, we'd like to be in middle.
+
+->
+
+Now we can not simply use all of these mentioned libraries, sometimes we are using some inhouse components that require styles overriding. And that makes the development not fun. It takes time to implement the design, but more so the next time you need to add some tweaks.
+
+How do we achieve this sweet point?
+->
 -->
 
 ---
@@ -181,11 +220,11 @@ or Utility-first CSS. In this talk, these terms may come up interchangably and w
 </div>
 
 <!--
-The HTML contains a div, which has a class name of "card".
+In this HTML code, we have a simple div, which has a class name of "card".
 
-In the CSS section, it contains CSS rules. In this example, you can see only one rule which targets the "card" class by using dot selector.
+The styling of this card element is defined in the CSS, this is what we call a CSS rule.
 
-Each line inside the rule is called declaration 
+Each line inside the rule is called a declaration 
 
 ->
 
@@ -337,6 +376,8 @@ layout: code-preview
 <!--
 It's also impossible to imagine the UI just from the code
 
+From the left side code we have no idea what the right side could look like, we would need to switch to the css file, look up the rules, build a mind map of html elements and their css rules together to create an image of this card.
+
 ->
 -->
 
@@ -363,6 +404,13 @@ layout: code-preview
 
 <ExampleCard></ExampleCard>
 
+<!--
+With functional css, we only need to write the classes so that we don't need to switch context between html and css to write or read the code. 
+
+And by reading the code, even as someone who hasn't worked on the project you can get an idea of how the UI would look like
+
+->
+-->
 
 ---
 layout: code-preview
@@ -387,6 +435,19 @@ layout: code-preview
 
 <ExampleCard></ExampleCard>
 
+<!--
+You may not able to see the shadow easily with the dark background, let me light up the slides 
+
+**CHANGE TO WHITE THEME**
+
+
+-> px..
+CMD + SHIFT + C
+...
+
+->
+-->
+
 ---
 
 # Semantic vs utility classes
@@ -401,6 +462,13 @@ layout: code-preview
   https://adamwathan.me/css-utility-classes-and-separation-of-concerns/
 </div>
 
+<!--
+We won't go deep into the battle betwen semantic and utility classes since it can be a whole own talk.
+
+However some points are worth taking into consideration is that, ...
+
+For more details about this discussion you can find under these two links.
+-->
 
 ---
 layout: image-right
@@ -441,12 +509,12 @@ layout: statement
 ---
 layout: fact
 ---
-<h1 v-motion-slide-visible-bottom>It's <h1>fast</h1></h1>
+<h1 v-motion-slide-visible-bottom>It's <h1>rapid</h1></h1>
 
 ---
 layout: fact
 ---
-<h1>It's <h1 v-motion v-motion-slide-visible-bottom>rapid</h1></h1>
+<h1>It's <h1 v-motion v-motion-slide-visible-bottom>customizable</h1></h1>
 
 ---
 layout: fact
@@ -454,12 +522,8 @@ layout: fact
 <h1>DX <h1 v-motion v-motion-slide-visible-bottom>🚀</h1></h1>
 
 ---
-layout: 3-images
-imageLeft: /lbbw.png
-imageTopRight: /mbio.svg
-imageBottomRight: /sokabau.webp
 ---
-
+random sites
 
 ---
 layout: fact
