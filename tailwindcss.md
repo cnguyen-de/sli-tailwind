@@ -503,3 +503,12 @@ layout: fact
   Slides available @ <a href="https://slides.cnguyen.de">slides.cnguyen.de </a>
   <img class="inset-0 mt-4 top-95 mx-auto h-32" src="/qrcode.png">
 </p>
+
+---
+layout: fact
+---
+
+## Source code 
+
+https://github.com/cnguyen-de/nt-summit-tailwind-example.git <Copy />
+

@@ -5,6 +5,7 @@ specifiers:
   '@slidev/theme-apple-basic': ^0.20.0
   '@slidev/theme-default': '*'
   '@slidev/theme-seriph': '*'
+  '@vueuse/core': ^9.5.0
   playwright-chromium: ^1.26.1
 
 dependencies:
@@ -12,6 +13,7 @@ dependencies:
   '@slidev/theme-apple-basic': 0.20.0
   '@slidev/theme-default': 0.21.2
   '@slidev/theme-seriph': 0.21.3
+  '@vueuse/core': 9.5.0_vue@3.2.45
 
 devDependencies:
   playwright-chromium: 1.26.1
