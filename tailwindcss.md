@@ -50,9 +50,8 @@ My name is Chi and I live in FFM
 As a member of architecture and design guild, I like to dive into architectural topic within the frontend world and obviously HTML and CSS is something you can not simply ignore. It's what makes the UI, sometimes it's hard to find a balance in separation of concerns between business logics and UI logics within the HTML
 templates. As a matter of fact, having a well structured HTML enables you to implement changes in the UI easier.
 
-And the topic today is about functional CSS ->
+->
 -->
-
 
 ---
 layout: statement
@@ -80,12 +79,9 @@ Unified components provided by a design system allows to display the identity of
 
 Sometimes you'd need a touch of fanciness in which you'd need to change the base design of some components, customizability is key to make an application fun.
 
-->
-
 So combining all these aspects, we'd like to be in middle.
 
 ->
-
 -->
 
 ---
@@ -310,7 +306,7 @@ In a real world project, you'd have your code that looks something similar to th
 
 -> 
 
-This is an example using BEM methodology which utilizes semantic css classes. Semantic classes describe the HTML elements via a set rule of B-E-M. And each project has its own naming convention like prefixes or suffixes.
+This is an example using BEM methodology which utilizes semantic css classes. BEM stands for Block, Element, Modifier and Semantic class name describe the HTML elements. And each project has its own naming convention like prefixes or suffixes.
 
 
 
@@ -434,7 +430,7 @@ CMD + SHIFT + C
 </div>
 
 <!--
-We won't go deep into the battle betwen semantic and utility classes since it can be a whole own talk.
+There a a lot of discussions between semantic and utilitity class methodology. But we won't go deep into that today.
 
 However some points are worth taking into consideration is that, ...
 
