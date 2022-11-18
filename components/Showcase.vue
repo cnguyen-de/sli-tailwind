@@ -20,7 +20,7 @@
         alt=""
         srcset=""
       />
-      <figcaption class="text-center font-bold tracking-wider">Github</figcaption>
+      <figcaption class="text-center font-bold tracking-wider">theverge.com</figcaption>
     </figure>
     <figure class="h-full w-full hover:scale-110 transition duration-150">
       <img class="h-full w-full shadow-lg rounded-md object-contain aspect-" src="showcase/gg.webp" alt="" srcset="" />

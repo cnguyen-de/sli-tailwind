@@ -47,8 +47,7 @@ A short introduction about myself.
 
 My name is Chi and I live in FFM 
 
-As a member of architecture and design guild, I like to dive into architectural topic within the frontend world and obviously HTML and CSS is something you can not simply ignore. It's what makes the UI, sometimes it's hard to find a balance in separation of concerns between business logics and UI logics within the HTML
-templates. As a matter of fact, having a well structured HTML enables you to implement changes in the UI easier.
+As a member of architecture and design guild, I like to dive into architectural topics within the frontend world and obviously HTML and CSS is something you can not simply ignore. It's what makes the UI, sometimes it's hard to find a balance in separation of concerns between business logics and UI logics within the HTML templates.
 
 ->
 -->
@@ -453,6 +452,9 @@ imageSrc: >-
 * Built-in dark mode
 * Responsiveness in HTML
 
+<!--
+Tailwind CSS has one of the highest satisfaction rate from users. This graph is the result from the survey of State of CSS 2021 and tailwindCSS has been consistently top 1 for 3 years.
+-->
 
 ---
 layout: image-right
@@ -511,4 +513,3 @@ layout: fact
 ## Source code 
 
 https://github.com/cnguyen-de/nt-summit-tailwind-example.git <Copy />
-
