@@ -14,7 +14,7 @@ const props = defineProps(['details'])
     <div class="text-3xl font-bold absolute top-10">
       User experience / Accessibility
       <div class="font-base text-xl" v-show="props?.details" v-motion-slide-visible-right>
-        Mantine <br> Headless
+        Mantine <br> Headless UI
       </div>
     </div> 
     <div class="text-3xl font-bold absolute top-90 left-0">

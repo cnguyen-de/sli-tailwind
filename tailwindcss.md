@@ -6,7 +6,7 @@ class: text-center
 lineNumbers: false
 highlighter: shiki
 selectable: false
-exportFilename: tailwindcss-novasummit22
+exportFilename: functionalcss
 info: |
   ## Functional CSS with Tailwindcss
 drawings:
@@ -20,16 +20,15 @@ layout: intro-image
 image: /bg.jpeg
 ---
 
-<div class="absolute top-10">
+<div class="absolute top-10 left-12">
   <span class="font-700">
-    Chi Nguyen @ Novatec Summit 2022
+    Chi Nguyen @ MB.io Culture Gardening   
   </span>
 </div>
 
-<div class="absolute bottom-30 text-left">
+<div class="absolute bottom-30 text-left left-12">
   <h1>Functional CSS with Tailwindcss</h1>
-  <div class="italic font-light text-3xl text-gray-300">How functional CSS enables rapid prototyping!
-  </div>
+  <div class="italic font-light text-3xl text-gray-300">How functional CSS enables rapid prototyping!</div>
 </div>
 
 <!--
@@ -154,14 +153,14 @@ or Utility-first CSS. In this talk, these terms may come up interchangably and w
 ---
 
 # HTML & CSS
-## A basic introduction
+## The basics
 
 <div class="grid grid-cols-2 gap-8 pt-8">
   <div class="flex flex-col gap-8">
   
   ```html 
   HTML
-  <div class="card">Novatec Summit 2022</div>
+  <div class="card">Frontend Culture Gardening</div>
   ```
 
   ```css {1|all}
@@ -175,12 +174,14 @@ or Utility-first CSS. In this talk, these terms may come up interchangably and w
     justify-content: center;
     align-items: center;
     border-radius: 8px;
+    color: white;
+    font-weight: 700;
   }
   ```
   </div>
 
-  <div v-click class="flex justify-center items-center w-[450px] h-[300px] bg-gradient-to-br from-[#E9454E] to-[#5B4897] rounded-lg">
-  Novatec Summit 2022
+  <div v-click class="flex justify-center items-center w-[450px] h-[300px] bg-gradient-to-br from-[#E9454E] to-[#5B4897] rounded-lg text-white font-bold">
+  Frontend Culture Gardening
   </div>
 </div>
 
@@ -209,16 +210,15 @@ And this code snippet will render this nice red violet card
   <div class="grid grid-cols-2 gap-8">
 
   ```html
-  <div class="absolute top-10">
-    <span class="font-bold">
-      Chi Nguyen @ Novatec Summit 2022
+  <div class="absolute top-10 left-12">
+    <span class="font-700">
+      Chi Nguyen @ MB.io Culture Gardening   
     </span>
   </div>
-  <div class="absolute bottom-30 text-left">
+
+  <div class="absolute bottom-30 text-left left-12">
     <h1>Functional CSS with Tailwindcss</h1>
-    <div class="italic font-light text-3xl text-gray-300">
-      Start doing rapid web development today!
-    </div>
+    <div class="italic font-light text-3xl text-gray-300">How functional CSS enables rapid prototyping!</div>
   </div>
   ```
 
@@ -483,7 +483,7 @@ layout: fact
 ---
 layout: fact
 ---
-<h1>It's <h1 v-motion v-motion-slide-visible-bottom>customizable</h1></h1>
+<h1>It's <h1 v-motion v-motion-slide-visible-bottom>fun</h1></h1>
 
 ---
 layout: fact
