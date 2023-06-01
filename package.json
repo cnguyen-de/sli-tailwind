@@ -11,7 +11,7 @@
     "@slidev/theme-apple-basic": "^0.20.0",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*",
-    "@vueuse/core": "^9.5.0"
+    "@vueuse/core": "^10.1.2"
   },
   "devDependencies": {
     "playwright-chromium": "^1.26.1"
