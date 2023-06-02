@@ -1,8 +1,7 @@
 <script setup>
+const props = defineProps(["url"]);
 import { useClipboard } from "@vueuse/core";
 const { copy, text } = useClipboard({ legacy: true });
-const url =
-  "git clone https://github.com/cnguyen-de/nt-summit-tailwind-example.git";
 </script>
 
 <template>

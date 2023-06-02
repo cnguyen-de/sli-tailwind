@@ -512,4 +512,4 @@ layout: fact
 
 ## Source code 
 
-https://github.com/cnguyen-de/nt-summit-tailwind-example.git <Copy />
+https://github.com/cnguyen-de/sli-tailwind <Copy url="git clone https://github.com/cnguyen-de/sli-tailwind" />
