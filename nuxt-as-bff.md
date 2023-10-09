@@ -165,6 +165,11 @@ layout: statement
 
 # Thank you
 
+<p class="absolute pt-4 text-gray-700 dark:text-gray-400" v-click>
+  Slides available @ <a href="https://slides.cnguyen.de">slides.cnguyen.de </a>
+  <img class="inset-0 mt-4 top-95 mx-auto h-32" src="/qrcode.png">
+</p>
+
 ---
 layout: statement
 ---
