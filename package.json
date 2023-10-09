@@ -2,8 +2,8 @@
   "name": "sli-tailwind",
   "private": true,
   "scripts": {
-    "build": "slidev build tailwindcss.md",
-    "dev": "slidev tailwindcss.md",
+    "build": "slidev build nuxt-as-bff.md",
+    "dev": "slidev nuxt-as-bff.md",
     "export": "slidev export"
   },
   "dependencies": {

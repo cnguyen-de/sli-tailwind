@@ -5,15 +5,15 @@
       <img class="rounded-full drop-shadow-2xl" src="/itsame.jpg" alt="Chi Nguyen" />
     </div>
     <div class="text-left">
-      <h1 class="font-bold text-gray-800 dark:text-white drop-shadow-lg">Chi Nguyen</h1>
-      <h5 class="text-3xl text-gray-500 dark:text-gray-300">
+      <h1 class="pb-4 font-bold text-gray-800 dark:text-white drop-shadow-lg">Chi Nguyen</h1>
+      <h5 class="text-3xl text-gray-600 dark:text-gray-300">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="w-6 h-6 inline"
+          class="mr-1 w-6 h-6 inline"
         >
           <path
             stroke-linecap="round"
@@ -24,14 +24,14 @@
 
         Frontend Engineer
       </h5>
-      <h5 class="text-3xl my-1 text-gray-500 dark:text-gray-300">
+      <h5 class="text-3xl my-1 text-gray-600 dark:text-gray-300">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="w-6 h-6 inline"
+          class="mr-1 w-6 h-6 inline"
         >
           <path
             stroke-linecap="round"
@@ -41,14 +41,14 @@
         </svg>
         DCP Connect
       </h5>
-      <h5 class="text-3xl text-gray-500 dark:text-gray-300">
+      <h5 class="text-3xl text-gray-600 dark:text-gray-300">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6 inline"
+            class="mr-1 w-6 h-6 inline"
           >
             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"></path>
             <path
